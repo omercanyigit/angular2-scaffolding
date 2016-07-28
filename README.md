@@ -1,2 +1,13 @@
-# angular2-scaffolding
-You can create an app with angular2, typescript, gulp and scss
+Angular2 Scaffolding
+=================================
+
+You can work with gulp and scss in Angular2
+
+Running
+-------
+
+> npm install
+
+> gulp build
+
+> npm start

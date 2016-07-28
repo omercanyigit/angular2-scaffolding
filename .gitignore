@@ -1,0 +1,9 @@
+/.idea/
+.DS_Store
+build/
+src/app/styles/css/
+src/vendor/
+node_modules/
+typings/
+npm-debug.log
+src/app/images/min/
