@@ -1,0 +1,30 @@
+{
+  "name": "angular2-scaffolding",
+  "description": "Angular2 and work with gulp, scss, typescript",
+  "main": "src/vendor/bower_components",
+  "authors": [
+    "canygt27 <canygt27@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/canygt27/angular2-scaffolding",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendor/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ng2-bootstrap": "^1.0.24",
+    "bourbon": "^4.2.7"
+  },
+  "overrides": {
+    "bourbon": {
+      "main": [
+       "app/assets/stylesheets/_bourbon.scss"
+      ]
+    }
+  }
+}

@@ -11,6 +11,8 @@ const tsProject = tsc.createProject("tsconfig.json");
 const tslint = require('gulp-tslint');
 const sass = require("gulp-sass");
 const images = require('gulp-imagemin');
+const wiredep = require('gulp-wiredep');
+
 
 /**
  * Remove build directories.
@@ -26,6 +28,21 @@ gulp.task('tslint', () => {
     return gulp.src("src/**/*.ts")
         .pipe(tslint())
         .pipe(tslint.report('prose'));
+});
+
+
+/***
+ * Wiredep for bower scss components
+ ****/
+gulp.task('wiredep', () => {
+    return gulp.src('src/app/styles/main.scss')
+        .pipe(wiredep({
+            optional: 'configuration',
+            goes: 'here',
+            directory: 'src/app/vendor/bower_components',
+            ignorePath: /^(\.\.\/)+/
+        }))
+        .pipe(gulp.dest('src/app/vendor'));
 });
 
 /**

@@ -1,7 +1,7 @@
 {
   "name": "angular2-scaffolding",
   "version": "1.0.0",
-  "description": "Angular2 and work with gulp, scss, typescirpt",
+  "description": "Angular2 and work with gulp, scss, typescript",
   "scripts": {
     "clean": "gulp clean",
     "compile": "gulp compile",
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.3.7",
+    "bower": "^1.7.9",
     "concurrently": "^2.0.0",
     "cssnano": "^3.7.3",
     "del": "^2.2.0",
@@ -38,12 +39,14 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-tslint": "^4.3.3",
     "gulp-typescript": "^2.12.0",
+    "gulp-wiredep": "0.0.0",
     "lite-server": "^2.2.0",
     "precss": "^1.4.0",
     "requirejs": "^2.2.0",
     "sass-loader": "^4.0.0",
     "tslint": "^3.5.0",
     "typescript": "^1.8.10",
-    "typings": "^1.0.4"
+    "typings": "^1.0.4",
+    "wiredep": "^4.0.0"
   }
 }
