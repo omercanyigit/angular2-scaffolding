@@ -11,3 +11,5 @@ Running
 > gulp build
 
 > npm start
+
+* this is including watch, concurrent and lite-server
