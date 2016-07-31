@@ -30,19 +30,12 @@ gulp.task('tslint', () => {
         .pipe(tslint.report('prose'));
 });
 
-
 /***
  * Wiredep for bower scss components
  ****/
 gulp.task('wiredep', () => {
     return gulp.src('src/app/styles/main.scss')
-        .pipe(wiredep({
-            optional: 'configuration',
-            goes: 'here',
-            directory: 'src/app/vendor/bower_components',
-            ignorePath: /^(\.\.\/)+/
-        }))
-        .pipe(gulp.dest('src/app/vendor'));
+        .pipe(wiredep());
 });
 
 /**
